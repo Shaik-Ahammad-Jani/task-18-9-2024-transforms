@@ -1,0 +1,162 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style-type:none;
+    /* color: white; */
+}
+.child1{
+    display: flex;
+    gap:5px;
+    transform: translate(10px);
+}
+.child2{
+    display: flex;
+    gap:5px;
+    margin-top: 10px;
+    transform: translate(10px);
+}
+.sub-child{
+    border: 2px solid;
+    width:245px;
+    padding-left: 30px;
+}
+.img1:hover{
+    transform: translate(50px,50px);
+
+}
+.img2:hover{
+    transform: rotate(270deg);
+
+}
+.img3:hover{
+    transform: skew(200deg,150deg);
+
+}
+.img4:hover{
+    transform: scale(1.5);
+}
+.img5:hover{
+    transform: skew(2000deg,3000deg);
+}
+.img6:hover{
+    transform: rotate(90deg);
+}
+.img11:hover{
+    transform: translate(50px,20px);
+}
+.img12:hover{
+    transform: translate(-50px,20px);
+}
+.img13:hover{
+    transform: rotate(150deg);
+}
+.img14:hover{
+    transform: skew(200deg,150deg);
+}
+.img15:hover{
+    transform: scale(2);
+}
+.img16:hover{
+    transform: translate(50px,-20px);
+}
+.img17:hover{
+    transform:rotate(300deg);
+}
+
+/* *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    list-style-type:none;
+} */
+header{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    height: 15vh;
+}
+.logo{
+    font-size:1.5rem;
+    transform: 2s ;
+    color: violet;
+    font-weight: bold;
+
+}
+.serch-bar{
+    padding: 5px;
+    border:none;
+    border-radius: 50px;
+    &:focus{
+        outline:3px solid violet
+    }
+    &::placeholder{
+        font-style: oblique;
+    }
+}
+.nav-links{
+    display: flex;
+    align-items: center;
+    width:300px;
+    justify-content: space-between;
+
+}
+#menu-toggele{
+    display: none;
+}
+.hamberger{
+    display: none;
+    flex-direction: column;
+    gap:5px;
+    color:white;
+}
+.hamberger span{
+    width:40px;
+    height:5px;
+}
+@media (max-width:768px){
+    .hamberger{
+        display: block;
+    }
+    .nav-links{
+        display: none;
+    }
+    #menu-toggele{
+        display: block;
+    }
+    #menu-toggele:checked + label + nav .nav-links{
+        display: inline-block;
+        flex-direction: column;
+        position: absolute;
+        top:80px;
+        left:450px;
+        z-index: 100;
+        background-color: #333;
+        padding: 10px;
+        /* margin-left: 50px; */
+    }
+}
+@media (min-width:769px) and  (max-width:1440px){
+    .hamberger{
+        display: none;
+    }
+    .nav-links{
+        display: flex;
+            
+
+    }
+}
+footer{
+    background-color: black;
+    width: 100%;
+    height: 300px;
+    color: white;
+    display: flex;
+    /* padding: 5%; */
+}
+.jhony .imgg:hover{
+    transform: rotate(300deg)
+}
